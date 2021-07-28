@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div {
+    width: 20vmin;
+    height: 20vmin;
+    background: tomato;
+    border-radius: 2vmin;
+}
+div:hover {
+    animation: animation1 2s ease 0.5s;
+}
+
+@keyframes animation1 {
+    0%,
+    100% {
+        transform: translate(0, 0) rotate(0deg) scale(1);
+    }
+    30%,
+    60% {
+        transform: translate(15vmin, 15vmin) rotate(90deg) scale(1.5);
+    }
+}
